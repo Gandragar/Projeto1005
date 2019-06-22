@@ -31,13 +31,11 @@ public class RotateKnob : MonoBehaviour
 
 	private void OnMouseDown()
 	{
-		Debug.Log("down");
 		_canMove = true;
 	}
 
 	private void OnMouseUp()
 	{
-		Debug.Log("up");
 		_canMove = false;
 	}
 
