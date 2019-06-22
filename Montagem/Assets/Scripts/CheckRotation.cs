@@ -26,21 +26,21 @@ public class CheckRotation : MonoBehaviour
 	private void Update()
 	{
 		// knob horizontal
-		if(HorizontalKnob.transform.rotation.eulerAngles.z >= 90f)
+		if (HorizontalKnob.transform.rotation.eulerAngles.z >= HAngle - 5 && HorizontalKnob.transform.rotation.eulerAngles.z <= HAngle + 5)
 		{
 			HorizontalKnob.GetComponent<RotateKnob>().enabled = false;
 			_hCheck = true;
 		}
 
 		// knob vertical
-		if (VerticalKnob.transform.rotation.eulerAngles.z >= 90f)
+		if (VerticalKnob.transform.rotation.eulerAngles.z >= VAngle - 5 && VerticalKnob.transform.rotation.eulerAngles.z <= VAngle + 5)
 		{
 			VerticalKnob.GetComponent<RotateKnob>().enabled = false;
 			_vCheck = true;
 		}
 
 
-		if(_hCheck && _vCheck)
+		if (_hCheck && _vCheck)
 		{
 			// something happen
 			Debug.Log("ding");
