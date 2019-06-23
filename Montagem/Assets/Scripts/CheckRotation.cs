@@ -8,7 +8,9 @@ public class CheckRotation : MonoBehaviour
 	public GameObject HorizontalKnob;
 	public GameObject VerticalKnob;
 	[Space]
+	[Range(0, 360)]
 	public float HAngle = 90;
+	[Range(0, 360)]
 	public float VAngle = 90;
 
 
@@ -42,8 +44,6 @@ public class CheckRotation : MonoBehaviour
 
 		if (_hCheck && _vCheck)
 		{
-			// something happen
-			Debug.Log("ding");
 			if (!_calledTimer)
 				StartCoroutine(Timer());
 		}
