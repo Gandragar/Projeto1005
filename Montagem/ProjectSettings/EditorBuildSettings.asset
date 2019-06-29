@@ -17,28 +17,22 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/04Animacao02.unity
     guid: e58f35ad8e2be0341a9d8e425ddfa047
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/05Interacao Fases da Lua.unity
     guid: 650c1b41fed17494faaf5911c15420ef
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/06animacao04.unity
     guid: fd1324a81694ea04390f9e0c88b08a76
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/07Interacao Asteroide e Lua.unity
     guid: 2cda990e2423bbf4892e6590ba056729
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/08Animacao05.unity
     guid: f869b857c0ef2e5498f726a4a993f9bd
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/09Interacao Eclipse.unity
     guid: 204ad7f67530a054f8a7a648766ae00f
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/10Animacao06.unity
     guid: 329bbaf2ab9aa624ab3289e7a9675425
-  - enabled: 1
-    path: Assets/Scenes/Test/01.unity
-    guid: de92d2bde46fd5943b97ce3297bb870c
-  - enabled: 1
-    path: Assets/Scenes/Test/02.unity
-    guid: a783aa9c346cc6044bd4a4b0f05f5ce6
   m_configObjects: {}
