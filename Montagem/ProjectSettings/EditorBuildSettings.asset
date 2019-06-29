@@ -35,4 +35,10 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/10Animacao06.unity
     guid: 329bbaf2ab9aa624ab3289e7a9675425
+  - enabled: 1
+    path: Assets/Scenes/Test/01.unity
+    guid: de92d2bde46fd5943b97ce3297bb870c
+  - enabled: 1
+    path: Assets/Scenes/Test/02.unity
+    guid: a783aa9c346cc6044bd4a4b0f05f5ce6
   m_configObjects: {}
