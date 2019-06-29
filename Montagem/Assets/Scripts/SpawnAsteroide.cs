@@ -2,30 +2,33 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SpawnAsteroide : MonoBehaviour {
+public class SpawnAsteroide : MonoBehaviour
+{
+	public GameObject AsteroidePrefab;
+	public float SpawnFrequency = 2f;
+	public GameObject[] SpawnPoints;
 
-  public GameObject Asteroide;
-  public float maxPos = 7f;
-  public float delayTimer = 2f;
-  float timer;
+	private float _timer;
 
+	void Start()
+	{
+		_timer = SpawnFrequency;
+	}
 
-    // Start is called before the first frame update
-    void Start()
-    {
-      timer = delayTimer;
-    }
+	void Update()
+	{
+		_timer -= Time.deltaTime;
+		if (_timer <= 0)
+		{
+			Instantiate(AsteroidePrefab, SpawnPoints[RandomSpawn()].transform.position, Quaternion.identity);
+			_timer = SpawnFrequency;
+		}
 
-    // Update is called once per frame
-    void Update()
-    {
-      timer -= Time.deltaTime;
-      if ( timer <= 0) {
-        Vector3 AsteroidePos = new Vector3( Random.Range(-7f,7f), transform.position.y, transform.position.z);
-        Instantiate (Asteroide, AsteroidePos, transform.rotation);
-        timer = delayTimer;
-      }
+	}
 
-    }
+	private int RandomSpawn()
+	{
+		return Random.Range(0, SpawnPoints.Length);
+	}
 
-  }
+}
